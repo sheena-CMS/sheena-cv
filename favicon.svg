@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Change Made Simple">
+  <rect width="64" height="64" rx="14" fill="#F5F0EB"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="13" fill="none" stroke="#e7e2da" stroke-width="2"/>
+  <text x="32" y="46" font-family="'Arial Black', Impact, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="-2" text-anchor="middle">
+    <tspan fill="#1d1d1f">C</tspan><tspan fill="#D63384">MS</tspan>
+  </text>
+</svg>
