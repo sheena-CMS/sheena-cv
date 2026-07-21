@@ -123,11 +123,11 @@ h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1.2rem;}
 .hl-icon{width:36px;height:36px;border-radius:10px;background:rgba(255,77,166,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;}
 .hl-text{flex:1;}
 .hl-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:3px;}
-.hl-sub{font-size:13px;color:#8a8a8f;line-height:1.5;}
+.hl-sub{font-size:15px;color:#e8e8ee;line-height:1.6;}
 
 /* ============ CAREER ============ */
-.career-intro{max-width:52ch;margin-bottom:clamp(36px,5vw,56px);}
-.career-intro p{font-size:1.05rem;color:#d1d1d6;line-height:1.7;}
+.career-intro{max-width:72ch;margin-bottom:clamp(36px,5vw,56px);}
+.career-intro p{font-size:1.1rem;color:#e0e0e6;line-height:1.7;}
 
 .timeline{position:relative;padding-left:32px;}
 .timeline::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--pink-bright),rgba(255,77,166,.15));}
@@ -141,31 +141,45 @@ h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1.2rem;}
 .tl-item.featured .tl-dot{background:var(--pink-bright);}
 
 .tl-card{
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  background:#ffffff;border:1.5px solid #e7e2da;
   border-radius:18px;padding:clamp(20px,3vw,28px);
   transition:border-color .25s,transform .25s;
 }
-.tl-card:hover{border-color:rgba(255,77,166,.4);transform:translateX(4px);}
-.tl-item.featured .tl-card{background:rgba(255,77,166,.08);border-color:rgba(255,77,166,.25);}
+.tl-card:hover{border-color:var(--pink-deep);transform:translateX(4px);}
+.tl-item.featured .tl-card{background:#fff0f7;border-color:rgba(214,51,132,.3);}
+.tl-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:.7rem;}
+.tl-org{font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-deep);}
+.tl-sep{color:#ccc;font-size:13px;}
+.tl-period{font-size:15px;color:#5a5a5e;font-weight:500;}
+/* Force dark text inside all white cards — overrides .sec-dark color:#fff */
+.tl-card,.tl-card *{color:#1d1d1f !important;}
+.tl-card .tl-org{color:var(--pink-deep) !important;}
+.tl-card .tl-period{color:#5a5a5e !important;}
+.tl-card .tl-tag{background:#f5f0eb !important;border:1px solid #e7e2da !important;color:#2a2a2e !important;}
+.earlier-card,.earlier-card *{color:#1d1d1f !important;}
+.earlier-card .earlier-role{color:var(--pink-deep) !important;}
+.qual-item,.qual-item *{color:#1d1d1f !important;}
+.qual-item .qual-year{color:var(--pink-bright) !important;}
+.qual-item .qual-inst{color:#3a3a3e !important;}
 
 .tl-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:.7rem;}
 .tl-org{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-bright);}
 .tl-sep{color:rgba(255,255,255,.2);font-size:12px;}
-.tl-period{font-size:13px;color:#8a8a8f;}
+.tl-period{font-size:13px;color:#b8b8c2;}
 .tl-role{font-family:'Clash Display',sans-serif;font-weight:700;font-size:clamp(1.05rem,2vw,1.25rem);color:#fff;margin-bottom:.65rem;}
-.tl-desc{font-size:14.5px;color:#d1d1d6;line-height:1.65;margin-bottom:.9rem;}
+.tl-desc{font-size:16px;color:#e0e0e6;line-height:1.7;margin-bottom:.9rem;}
 .tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.tl-tag{font-size:12px;font-weight:600;color:#8a8a8f;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:4px 10px;border-radius:100px;}
+.tl-tag{font-size:13px;font-weight:600;color:#c0c0ca;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:5px 12px;border-radius:100px;}
 
 /* Earlier career */
 .earlier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:clamp(28px,4vw,40px);}
 .earlier-card{
-  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  background:#ffffff;border:1.5px solid #e7e2da;
   border-radius:14px;padding:20px;
 }
-.earlier-org{font-family:'Clash Display',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:4px;}
-.earlier-role{font-size:13px;color:var(--pink-bright);font-weight:600;margin-bottom:6px;}
-.earlier-desc{font-size:13px;color:#8a8a8f;line-height:1.55;}
+.earlier-org{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16px;color:#1d1d1f;margin-bottom:4px;}
+.earlier-role{font-size:14px;color:var(--pink-deep);font-weight:600;margin-bottom:6px;}
+.earlier-desc{font-size:14px;color:#5a5a5e;line-height:1.6;}
 
 /* ============ SKILLS / TOOLS ============ */
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
@@ -184,18 +198,18 @@ h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1.2rem;}
 .quals-list{display:flex;flex-direction:column;gap:16px;}
 .qual-item{
   display:flex;gap:18px;align-items:flex-start;
-  background:var(--white);border:1.5px solid var(--line);border-radius:16px;padding:clamp(18px,2.5vw,24px);
+  background:#ffffff;border:1.5px solid #e7e2da;border-radius:16px;padding:clamp(18px,2.5vw,24px);
   transition:border-color .25s,transform .25s;
 }
-.qual-item:hover{border-color:var(--pink-deep);transform:translateX(4px);}
+.qual-item:hover{border-color:rgba(255,77,166,.5);transform:translateX(4px);}
 .qual-year{
   flex-shrink:0;font-family:'Clash Display',sans-serif;font-weight:700;
-  font-size:14px;color:var(--pink-deep);background:#fdf0f5;
+  font-size:14px;color:var(--pink-bright);background:rgba(255,77,166,.12);
   padding:6px 12px;border-radius:8px;white-space:nowrap;
 }
 .qual-text{flex:1;}
-.qual-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:3px;}
-.qual-inst{font-size:14px;color:var(--muted);}
+.qual-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16px;color:#1d1d1f;margin-bottom:3px;}
+.qual-inst{font-size:14px;color:#5a5a5e;}
 
 /* ============ CTA ============ */
 .cta-box{
@@ -377,7 +391,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Founder &amp; Principal Change Consultant</div>
           <div class="tl-desc">Founded a boutique change consultancy specialising in digital transformation and enterprise AI adoption, creating a proprietary 5-step change methodology and business readiness framework now used across client engagements. Developed an AI-powered Change Impact Scorecard built end-to-end on Claude API, Cloudflare, GitHub and JSEmail.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Change Strategy</span><span class="tl-tag">AI Tool Development</span><span class="tl-tag">Methodology Design</span><span class="tl-tag">Business Development</span><span class="tl-tag">Website Development</span>
+            <span class="tl-tag">Change Strategy</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Website Development</span><span class="tl-tag">Content Development</span><span class="tl-tag">Marketing Plan</span><span class="tl-tag">Project Management</span><span class="tl-tag">Business Development</span><span class="tl-tag">AI-Change Tools Development</span><span class="tl-tag">Claude API</span><span class="tl-tag">Methodology Design</span>
           </div>
         </div>
       </div>
@@ -393,7 +407,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change &amp; Transformation Lead</div>
           <div class="tl-desc">Led technology and process transformation aligned to the organisation's 2040 strategic vision. Change impact analysis flagged a vendor mismatch, averting a costly failed implementation before it commenced.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Delivery</span>
+            <span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Process &amp; Requirements</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Comms Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Project Management</span><span class="tl-tag">Vendor Risk Assessment</span>
           </div>
         </div>
       </div>
@@ -409,7 +423,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change Business Partner — HR &amp; Technology</div>
           <div class="tl-desc">Embedded as change partner across concurrent Salesforce and Azure Data Lake programs. Partnered with the CIO to design a capability uplift program for a 100-person technology team and redeveloped the change methodology and toolkit, endorsed by the CIO and embedded org-wide.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">Azure Data Lake</span><span class="tl-tag">Capability Uplift</span><span class="tl-tag">Methodology Design</span><span class="tl-tag">CIO Partnership</span>
+            <span class="tl-tag">Salesforce</span><span class="tl-tag">Azure Data Lake</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Project Management</span><span class="tl-tag">Capability Uplift</span><span class="tl-tag">CIO Partnership</span>
           </div>
         </div>
       </div>
@@ -425,7 +439,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change Manager</div>
           <div class="tl-desc">Led change across two simultaneous system implementations — rostering and payroll/HRIS — for a 2500-staff NDIS provider. Turned significant organisational resistance into structured engagement and stepped into training delivery to secure go-live readiness.</div>
           <div class="tl-tags">
-            <span class="tl-tag">HRIS</span><span class="tl-tag">Payroll</span><span class="tl-tag">Trade Union Engagement</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">NDIS</span>
+            <span class="tl-tag">HRIS</span><span class="tl-tag">Payroll</span><span class="tl-tag">NDIS</span><span class="tl-tag">Trade Union Engagement</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Comms Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span>
           </div>
         </div>
       </div>
@@ -441,7 +455,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change Lead — Multiple Projects</div>
           <div class="tl-desc">Led Salesforce transformation for 100 staff alongside a No Interest Loans simplification project, partnering with Big 4 delivery teams and stepping in as interim Project Manager during a leadership gap.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">Big 4 Partnership</span><span class="tl-tag">Project Management</span><span class="tl-tag">Product Management</span>
+            <span class="tl-tag">Salesforce</span><span class="tl-tag">Big 4 Partnership</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Project Management</span><span class="tl-tag">Product Management</span>
           </div>
         </div>
       </div>
@@ -457,7 +471,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change &amp; Training Manager — KIMS Reform Salesforce Project</div>
           <div class="tl-desc">Led change and training for a statewide kindergarten system rollout to Victorian Early Childhood Educators. Designed and delivered 80 live training sessions to 2000 users through full digital delivery during COVID — all solo-facilitated.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">Statewide Rollout</span><span class="tl-tag">80 Live Sessions</span><span class="tl-tag">2000 Users</span><span class="tl-tag">Government</span>
+            <span class="tl-tag">Salesforce</span><span class="tl-tag">80 Live Sessions</span><span class="tl-tag">2000 Users</span><span class="tl-tag">Statewide Rollout</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Product Management</span>
           </div>
         </div>
       </div>
@@ -473,7 +487,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change Lead — Salesforce Lightning Upgrade</div>
           <div class="tl-desc">Led a team delivering full change strategy, comms and training for 800 impacted users in the B&amp;G division. Built executive alignment with General Managers and developed a Change Leadership program for middle managers.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Salesforce Lightning</span><span class="tl-tag">800 Users</span><span class="tl-tag">Executive Alignment</span><span class="tl-tag">Change Leadership Program</span>
+            <span class="tl-tag">Salesforce Lightning</span><span class="tl-tag">800 Users</span><span class="tl-tag">Change Leadership Program</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Comms Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Project Management</span>
           </div>
         </div>
       </div>
@@ -489,21 +503,7 @@ footer a:hover{text-decoration:underline;}
           <div class="tl-role">Change Manager — Business Bank Salesforce Implementation</div>
           <div class="tl-desc">Managed change across 14 stakeholder groups in a highly regulated banking environment, supporting training delivery to 4000 users in one of Australia's largest Salesforce rollouts.</div>
           <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">4000 Users</span><span class="tl-tag">14 Stakeholder Groups</span><span class="tl-tag">Financial Services</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">IBM Bluewolf</span>
-          </div>
-          <div class="tl-role">Salesforce Client Engagement Director</div>
-          <div class="tl-desc">Built and led a change practice across multiple concurrent clients including Australia Post and Direct Connect.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Practice Build</span><span class="tl-tag">Salesforce</span><span class="tl-tag">Business Development</span><span class="tl-tag">Multiple Clients</span>
+            <span class="tl-tag">Salesforce</span><span class="tl-tag">4000 Users</span><span class="tl-tag">14 Stakeholder Groups</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span>
           </div>
         </div>
       </div>
@@ -513,11 +513,29 @@ footer a:hover{text-decoration:underline;}
         <div class="tl-card">
           <div class="tl-meta">
             <span class="tl-org">System Partners</span>
+            <span class="tl-sep">·</span>
+            <span class="tl-period">Jun 2015 – Dec 2016</span>
           </div>
-          <div class="tl-role">Change Practice Lead</div>
+          <div class="tl-role">Salesforce Change Practice Lead</div>
           <div class="tl-desc">Established change management as a formal discipline from scratch — building the methodology, tools and leadership buy-in across 15+ concurrent Salesforce client engagements including Tabcorp, Suncorp and Transport NSW.</div>
           <div class="tl-tags">
-            <span class="tl-tag">15+ Concurrent Clients</span><span class="tl-tag">Methodology Design</span><span class="tl-tag">Tabcorp</span><span class="tl-tag">Suncorp</span><span class="tl-tag">Transport NSW</span>
+            <span class="tl-tag">Salesforce</span><span class="tl-tag">15+ Concurrent Clients</span><span class="tl-tag">Tabcorp</span><span class="tl-tag">Suncorp</span><span class="tl-tag">Transport NSW</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Methodology Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-org">IBM Bluewolf</span>
+            <span class="tl-sep">·</span>
+            <span class="tl-period">Apr 2014 – May 2015</span>
+          </div>
+          <div class="tl-role">Salesforce Client Engagement Director &amp; Change Practice Lead</div>
+          <div class="tl-desc">Built and led a change practice across multiple concurrent clients including Australia Post and Direct Connect.</div>
+          <div class="tl-tags">
+            <span class="tl-tag">Salesforce</span><span class="tl-tag">Multiple Concurrent Clients</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Project Management</span><span class="tl-tag">Business Development</span>
           </div>
         </div>
       </div>
@@ -551,9 +569,11 @@ footer a:hover{text-decoration:underline;}
       </div>
     </div>
 
-    <div style="margin-top:clamp(32px,4vw,48px);padding-top:clamp(24px,3vw,32px);border-top:1px solid rgba(255,255,255,.1);">
-      <div class="label">Pre-2010 — UK &amp; Australia</div>
-      <p style="color:#8a8a8f;font-size:14.5px;max-width:72ch;line-height:1.7;">Supply chain, buying and SAP training roles across British Airports Authority, Colgate, Safeway UK, Fujitsu and Australia Post. Partnered with KPMG on a Department of Defence project in 2008.</p>
+    <div style="margin-top:clamp(32px,4vw,48px);">
+      <div class="earlier-card" style="border-left:3px solid var(--pink-deep);">
+        <div class="label" style="color:var(--pink-deep);margin-bottom:.6rem;">Pre-2010 — UK &amp; Australia</div>
+        <p style="font-size:16px;line-height:1.7;color:#1d1d1f;">Supply chain, buying and SAP training roles across British Airports Authority, Colgate, Safeway UK, Fujitsu and Australia Post. Partnered with KPMG on a Department of Defence project in 2008.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -643,7 +663,7 @@ footer a:hover{text-decoration:underline;}
 </section>
 
 <!-- QUALIFICATIONS -->
-<section class="sec sec-light" id="qualifications">
+<section class="sec sec-dark" id="qualifications">
   <div class="container">
     <div class="label">Qualifications</div>
     <h2 style="margin-bottom:clamp(28px,4vw,40px);">Education &amp; credentials</h2>
