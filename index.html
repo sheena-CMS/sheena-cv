@@ -6,227 +6,191 @@
 <title>Sheena Karim — Change & Transformation Leader</title>
 <meta name="description" content="30 years of project experience, 20 in change management. Trusted by CEOs, CFOs and CIOs across government, financial services, NFP and professional services.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
 <link rel="preconnect" href="https://api.fontshare.com">
 <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
-
 <style>
 :root{
-  --pink-bright:#FF4DA6;
-  --pink-deep:#D63384;
-  --accent:var(--pink-deep);
-  --accent-strong:#c02e76;
-  --ink:#1d1d1f;
-  --warm:#F5F0EB;
-  --white:#ffffff;
-  --muted:#5a5a5e;
-  --faint:#8a8a8f;
-  --line:#e7e2da;
+  --burg:#6B1F35;
+  --burg-mid:#8B2942;
+  --burg-pale:#F5ECF0;
+  --burg-light:#EDD5DC;
+  --pink:#FF4DA6;
+  --ink:#1A1208;
+  --ink-mid:#3D2E1A;
+  --muted:#7A6A58;
+  --cream:#FAF6F0;
+  --cream-mid:#F2EBE0;
+  --cream-dark:#E8DDD0;
+  --white:#FFFFFF;
+  --stone:#5A4A3A;
+  --line:#E0D5C5;
 }
-
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{
   font-family:'General Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  background:var(--warm);color:var(--ink);line-height:1.65;font-size:16px;
+  background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,h4,.font-head{font-family:'Clash Display',sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.1;}
-
+h1,h2,h3,h4{font-family:'Clash Display',sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.1;}
 .container{max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,40px);}
 .sec{padding:clamp(56px,8vw,96px) 0;}
-.sec-dark{background:var(--ink);color:#fff;}
-.sec-dark .label{color:var(--pink-bright);}
-.sec-light{background:var(--white);color:var(--ink);}
-.sec-warm{background:var(--warm);color:var(--ink);}
-
-.label{display:inline-block;font-family:'General Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;}
-h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1.2rem;}
+.label{display:inline-block;font-family:'General Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burg);margin-bottom:1rem;}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 
 /* ============ NAV ============ */
-.nav{
-  position:sticky;top:0;z-index:100;background:var(--ink);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.nav-inner{max-width:1100px;margin:0 auto;padding:16px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between;}
-.nav-logo{font-family:'Clash Display',sans-serif;font-weight:700;font-size:18px;color:#fff;text-decoration:none;letter-spacing:.01em;}
-.nav-logo span{color:var(--pink-bright);}
-.nav-links{display:flex;align-items:center;gap:24px;}
-.nav-links a{font-size:15px;font-weight:500;color:rgba(255,255,255,.75);text-decoration:none;transition:color .2s;}
-.nav-links a:hover{color:#fff;}
-.nav-cta{
-  font-family:'General Sans',sans-serif;font-weight:600;font-size:14px;
-  padding:10px 22px;border-radius:100px;background:var(--pink-bright);color:#fff;text-decoration:none;
-  transition:transform .2s,box-shadow .2s;
-}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,77,166,.4);color:#fff;}
+.nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1100px;margin:0 auto;padding:18px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Clash Display',sans-serif;font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;}
+.nav-logo span{color:var(--burg);}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{font-size:15px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--burg);}
+.nav-cta{font-family:'General Sans',sans-serif;font-weight:600;font-size:14px;padding:10px 22px;border-radius:100px;background:var(--burg);color:#fff;text-decoration:none;transition:transform .2s,box-shadow .2s;}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(107,31,53,.3);color:#fff;}
 
-/* ============ HERO ============ */
-.hero{background:var(--ink);padding:clamp(64px,10vw,110px) 0 clamp(56px,8vw,80px);}
+/* ============ HERO — light ============ */
+.hero{background:var(--cream-mid);padding:clamp(64px,10vw,110px) 0 clamp(56px,8vw,80px);border-bottom:1px solid var(--line);}
 .hero-grid{display:grid;grid-template-columns:1fr auto;gap:clamp(40px,6vw,80px);align-items:center;}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--pink-bright);margin-bottom:1.4rem;}
-.hero h1{font-size:clamp(2.2rem,5.5vw,4rem);color:#fff;margin-bottom:1.2rem;max-width:16ch;}
-.hero h1 em{color:var(--pink-bright);font-style:normal;}
-.hero-sub{font-size:clamp(1rem,1.8vw,1.2rem);color:#d1d1d6;line-height:1.7;margin-bottom:2rem;max-width:52ch;}
-.hero-contact{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:2.2rem;}
-.hero-contact a{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:rgba(255,255,255,.75);text-decoration:none;font-weight:500;transition:color .2s;}
-.hero-contact a:hover{color:var(--pink-bright);}
+.hero-eyebrow{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burg);margin-bottom:1.2rem;opacity:.8;}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4.2rem);color:var(--ink);margin-bottom:1.2rem;max-width:16ch;}
+.hero h1 em{color:var(--burg);font-style:normal;}
+.hero-sub{font-size:clamp(1.05rem,1.8vw,1.2rem);color:var(--muted);line-height:1.75;margin-bottom:2rem;max-width:52ch;}
+
+/* Contact icons row */
+.hero-contact{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:2.2rem;}
+.hero-contact a{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--white);border:1.5px solid var(--line);
+  color:var(--stone);text-decoration:none;
+  transition:background .2s,border-color .2s,color .2s,transform .2s;
+}
+.hero-contact a:hover{background:var(--burg);border-color:var(--burg);color:#fff;transform:translateY(-2px);}
+.hero-contact a svg{width:18px;height:18px;flex-shrink:0;}
+
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px;}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:'General Sans',sans-serif;font-weight:600;font-size:15px;
-  padding:13px 28px;border-radius:100px;text-decoration:none;
-  background:#fff;color:var(--ink);
-  transition:transform .2s,box-shadow .2s;
-}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25);}
-.btn-ghost{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:'General Sans',sans-serif;font-weight:600;font-size:15px;
-  padding:12px 28px;border-radius:100px;text-decoration:none;
-  background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35);
-  transition:transform .2s,border-color .2s,background .2s;
-}
-.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.7);transform:translateY(-2px);}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:600;font-size:16px;padding:14px 30px;border-radius:100px;text-decoration:none;background:var(--burg);color:#fff;transition:transform .2s,box-shadow .2s;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(107,31,53,.35);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:600;font-size:16px;padding:13px 30px;border-radius:100px;text-decoration:none;background:transparent;color:var(--burg);border:1.5px solid var(--burg);transition:transform .2s,background .2s,color .2s;}
+.btn-ghost:hover{background:var(--burg);color:#fff;transform:translateY(-2px);}
 
 /* Photo */
-.hero-photo{
-  width:clamp(200px,20vw,280px);aspect-ratio:4/5;border-radius:20px;overflow:hidden;
-  border:2.5px solid var(--pink-bright);box-shadow:0 24px 50px rgba(255,77,166,.25);
-  flex-shrink:0;
-}
+.hero-photo{width:clamp(200px,20vw,280px);aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:2.5px solid var(--burg-light);box-shadow:0 24px 50px rgba(107,31,53,.15);flex-shrink:0;}
 .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;}
 
 /* Stats row */
-.stats-row{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(40px,6vw,60px);border-top:1px solid rgba(255,255,255,.12);padding-top:clamp(32px,5vw,48px);}
-.stat{flex:1;min-width:140px;padding:0 20px 0 0;}
+.stats-row{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(40px,6vw,60px);border-top:1.5px solid var(--line);padding-top:clamp(32px,5vw,48px);}
+.stat{flex:1;min-width:140px;padding:0 24px 0 0;}
 .stat:first-child{padding-left:0;}
-.stat+.stat{border-left:1px solid rgba(255,255,255,.12);padding-left:20px;}
-.stat-num{font-family:'Clash Display',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,3rem);color:var(--pink-bright);line-height:1;}
-.stat-label{font-size:14px;color:#d1d1d6;margin-top:4px;}
+.stat+.stat{border-left:1.5px solid var(--line);padding-left:24px;}
+.stat-num{font-family:'Clash Display',sans-serif;font-weight:700;font-size:clamp(2.2rem,4.5vw,3.2rem);color:var(--burg);line-height:1;}
+.stat-label{font-size:15px;color:var(--muted);margin-top:6px;}
 
 /* ============ SUMMARY ============ */
+.sec-cream{background:var(--cream);}
+.sec-cream-mid{background:var(--cream-mid);}
 .summary-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,72px);align-items:start;}
-.summary-body p{font-size:clamp(1rem,1.7vw,1.15rem);line-height:1.75;color:var(--muted);margin-bottom:1.1rem;}
+.summary-body p{font-size:clamp(1rem,1.7vw,1.12rem);line-height:1.85;color:var(--muted);margin-bottom:1.2rem;}
 .summary-body p:last-child{margin-bottom:0;}
-.summary-body strong{color:var(--ink);}
+.summary-body strong{color:var(--ink-mid);}
 
-.highlight-card{
-  background:var(--ink);border-radius:20px;padding:clamp(24px,4vw,36px);
-  box-shadow:0 20px 40px rgba(29,29,31,.14);
-}
-.highlight-card .label{color:var(--pink-bright);}
-.hl-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);}
+.highlight-card{background:var(--ink-mid);border-radius:20px;padding:clamp(24px,4vw,36px);box-shadow:0 20px 40px rgba(26,18,8,.12);}
+.highlight-card .label{color:var(--burg-light);}
+.hl-item{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(250,246,240,.1);}
 .hl-item:last-child{border-bottom:none;padding-bottom:0;}
 .hl-item:first-child{padding-top:0;}
-.hl-icon{width:36px;height:36px;border-radius:10px;background:rgba(255,77,166,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;}
-.hl-text{flex:1;}
-.hl-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:15px;color:#fff;margin-bottom:3px;}
-.hl-sub{font-size:15px;color:#e8e8ee;line-height:1.6;}
+.hl-icon{width:38px;height:38px;border-radius:10px;background:rgba(107,31,53,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:17px;}
+.hl-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:4px;}
+.hl-sub{font-size:15px;color:rgba(250,246,240,.7);line-height:1.6;}
 
-/* ============ CAREER ============ */
+/* ============ CAREER — ACCORDION ============ */
+.sec-career{background:var(--cream-mid);}
 .career-intro{max-width:72ch;margin-bottom:clamp(36px,5vw,56px);}
-.career-intro p{font-size:1.1rem;color:#e0e0e6;line-height:1.7;}
+.career-intro p{font-size:1.1rem;color:var(--muted);line-height:1.8;}
 
-.timeline{position:relative;padding-left:32px;}
-.timeline::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--pink-bright),rgba(255,77,166,.15));}
-
-.tl-item{position:relative;margin-bottom:clamp(28px,4vw,40px);}
-.tl-item:last-child{margin-bottom:0;}
-.tl-dot{
-  position:absolute;left:-40px;top:6px;width:16px;height:16px;border-radius:50%;
-  background:var(--ink);border:2.5px solid var(--pink-bright);
+/* Featured card (top role, always open) */
+.tl-featured{
+  background:var(--white);border:1.5px solid var(--burg-light);border-left:4px solid var(--burg);
+  border-radius:18px;padding:clamp(22px,3vw,32px);margin-bottom:10px;
+  box-shadow:0 4px 20px rgba(107,31,53,.08);
 }
-.tl-item.featured .tl-dot{background:var(--pink-bright);}
+.tl-featured .tl-org{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--burg);}
+.tl-featured .tl-period{font-size:14px;color:var(--muted);font-weight:500;}
+.tl-featured .tl-role{font-family:'Clash Display',sans-serif;font-weight:700;font-size:clamp(1.15rem,2vw,1.35rem);color:var(--ink);margin:.6rem 0;}
+.tl-featured .tl-desc{font-size:16px;color:var(--muted);line-height:1.8;margin-bottom:1rem;}
+.tl-featured .tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.tl-featured .tl-tag{font-size:13px;font-weight:600;color:var(--stone);background:var(--cream-mid);border:1px solid var(--line);padding:5px 12px;border-radius:100px;}
 
-.tl-card{
-  background:#ffffff;border:1.5px solid #e7e2da;
-  border-radius:18px;padding:clamp(20px,3vw,28px);
-  transition:border-color .25s,transform .25s;
+/* Accordion items */
+.acc-list{display:flex;flex-direction:column;gap:6px;}
+.acc-item{background:var(--white);border:1.5px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s;}
+.acc-item:hover{border-color:var(--burg-light);}
+.acc-item.open{border-color:var(--burg-light);}
+
+.acc-head{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;
+  font-family:'General Sans',sans-serif;
 }
-.tl-card:hover{border-color:var(--pink-deep);transform:translateX(4px);}
-.tl-item.featured .tl-card{background:#fff0f7;border-color:rgba(214,51,132,.3);}
-.tl-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:.7rem;}
-.tl-org{font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-deep);}
-.tl-sep{color:#ccc;font-size:13px;}
-.tl-period{font-size:15px;color:#5a5a5e;font-weight:500;}
-/* Force dark text inside all white cards — overrides .sec-dark color:#fff */
-.tl-card,.tl-card *{color:#1d1d1f !important;}
-.tl-card .tl-org{color:var(--pink-deep) !important;}
-.tl-card .tl-period{color:#5a5a5e !important;}
-.tl-card .tl-tag{background:#f5f0eb !important;border:1px solid #e7e2da !important;color:#2a2a2e !important;}
-.earlier-card,.earlier-card *{color:#1d1d1f !important;}
-.earlier-card .earlier-role{color:var(--pink-deep) !important;}
-.qual-item,.qual-item *{color:#1d1d1f !important;}
-.qual-item .qual-year{color:var(--pink-bright) !important;}
-.qual-item .qual-inst{color:#3a3a3e !important;}
+.acc-head-left{flex:1;}
+.acc-meta{display:flex;align-items:baseline;gap:10px;margin-bottom:3px;}
+.acc-org{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--burg);}
+.acc-period{font-size:13px;color:var(--muted);}
+.acc-role-title{font-size:16px;font-weight:600;color:var(--ink);}
+.acc-chevron{color:var(--muted);transition:transform .25s;font-size:18px;flex-shrink:0;}
+.acc-item.open .acc-chevron{transform:rotate(180deg);color:var(--burg);}
 
-.tl-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:.7rem;}
-.tl-org{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-bright);}
-.tl-sep{color:rgba(255,255,255,.2);font-size:12px;}
-.tl-period{font-size:13px;color:#b8b8c2;}
-.tl-role{font-family:'Clash Display',sans-serif;font-weight:700;font-size:clamp(1.05rem,2vw,1.25rem);color:#fff;margin-bottom:.65rem;}
-.tl-desc{font-size:16px;color:#e0e0e6;line-height:1.7;margin-bottom:.9rem;}
-.tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.tl-tag{font-size:13px;font-weight:600;color:#c0c0ca;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:5px 12px;border-radius:100px;}
+.acc-body{
+  max-height:0;overflow:hidden;transition:max-height .3s ease;
+}
+.acc-item.open .acc-body{max-height:600px;}
+.acc-body-inner{padding:0 22px 20px;}
+.acc-desc{font-size:15.5px;color:var(--muted);line-height:1.8;margin-bottom:1rem;}
+.acc-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.acc-tag{font-size:12.5px;font-weight:600;color:var(--stone);background:var(--cream-mid);border:1px solid var(--line);padding:4px 11px;border-radius:100px;}
 
 /* Earlier career */
-.earlier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:clamp(28px,4vw,40px);}
-.earlier-card{
-  background:#ffffff;border:1.5px solid #e7e2da;
-  border-radius:14px;padding:20px;
-}
-.earlier-org{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16px;color:#1d1d1f;margin-bottom:4px;}
-.earlier-role{font-size:14px;color:var(--pink-deep);font-weight:600;margin-bottom:6px;}
-.earlier-desc{font-size:14px;color:#5a5a5e;line-height:1.6;}
+.earlier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:clamp(28px,4vw,40px);}
+.earlier-card{background:var(--white);border:1.5px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(26,18,8,.04);}
+.earlier-org{font-family:'Clash Display',sans-serif;font-weight:700;font-size:17px;color:var(--ink);margin-bottom:4px;}
+.earlier-role{font-size:14px;color:var(--burg);font-weight:600;margin-bottom:6px;}
+.earlier-desc{font-size:14px;color:var(--muted);line-height:1.65;}
+.pre2010-card{background:var(--white);border:1.5px solid var(--line);border-left:3px solid var(--burg);border-radius:14px;padding:20px 24px;box-shadow:0 2px 8px rgba(26,18,8,.04);}
 
-/* ============ SKILLS / TOOLS ============ */
+/* ============ SKILLS ============ */
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
-.skill-card{
-  background:var(--white);border:1.5px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,28px);
-  box-shadow:0 2px 12px rgba(29,29,31,.05);
-  transition:transform .25s,box-shadow .25s,border-color .25s;
-}
-.skill-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(29,29,31,.10);border-color:var(--pink-deep);}
-.skill-icon{width:40px;height:40px;border-radius:12px;background:#fdf0f5;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;}
-.skill-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:17px;color:var(--ink);margin-bottom:10px;}
+.skill-card{background:var(--white);border:1.5px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,28px);box-shadow:0 2px 12px rgba(26,18,8,.05);transition:transform .25s,box-shadow .25s,border-color .25s;}
+.skill-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(26,18,8,.09);border-color:var(--burg-light);}
+.skill-icon{width:42px;height:42px;border-radius:12px;background:var(--burg-pale);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;}
+.skill-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:18px;color:var(--ink);margin-bottom:10px;}
 .skill-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.skill-tag{font-size:12px;font-weight:600;color:var(--muted);background:var(--warm);border:1px solid var(--line);padding:4px 10px;border-radius:100px;}
+.skill-tag{font-size:13px;font-weight:600;color:var(--stone);background:var(--cream-mid);border:1px solid var(--line);padding:4px 10px;border-radius:100px;}
 
 /* ============ QUALS ============ */
 .quals-list{display:flex;flex-direction:column;gap:16px;}
-.qual-item{
-  display:flex;gap:18px;align-items:flex-start;
-  background:#ffffff;border:1.5px solid #e7e2da;border-radius:16px;padding:clamp(18px,2.5vw,24px);
-  transition:border-color .25s,transform .25s;
-}
-.qual-item:hover{border-color:rgba(255,77,166,.5);transform:translateX(4px);}
-.qual-year{
-  flex-shrink:0;font-family:'Clash Display',sans-serif;font-weight:700;
-  font-size:14px;color:var(--pink-bright);background:rgba(255,77,166,.12);
-  padding:6px 12px;border-radius:8px;white-space:nowrap;
-}
-.qual-text{flex:1;}
-.qual-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16px;color:#1d1d1f;margin-bottom:3px;}
-.qual-inst{font-size:14px;color:#5a5a5e;}
+.qual-item{display:flex;gap:18px;align-items:flex-start;background:var(--white);border:1.5px solid var(--line);border-radius:16px;padding:clamp(18px,2.5vw,24px);box-shadow:0 2px 8px rgba(26,18,8,.04);transition:border-color .25s,transform .25s;}
+.qual-item:hover{border-color:var(--burg-light);transform:translateX(4px);}
+.qual-year{flex-shrink:0;font-family:'Clash Display',sans-serif;font-weight:700;font-size:15px;color:var(--burg);background:var(--burg-pale);padding:7px 14px;border-radius:8px;white-space:nowrap;}
+.qual-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:17px;color:var(--ink);margin-bottom:4px;}
+.qual-inst{font-size:15px;color:var(--muted);}
 
 /* ============ CTA ============ */
-.cta-box{
-  background:var(--ink);border-radius:24px;padding:clamp(40px,6vw,64px);
-  text-align:center;
-}
+.cta-box{background:var(--ink);border-radius:24px;padding:clamp(40px,6vw,64px);text-align:center;}
 .cta-box h2{color:#fff;}
-.cta-box p{font-size:1.1rem;color:#d1d1d6;margin-bottom:2rem;max-width:44ch;margin-left:auto;margin-right:auto;}
+.cta-box .label{color:var(--burg-light);}
+.cta-box p{font-size:1.15rem;color:rgba(250,246,240,.6);margin-bottom:2rem;max-width:44ch;margin-left:auto;margin-right:auto;}
 .cta-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.btn-primary-light{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:600;font-size:16px;padding:14px 30px;border-radius:100px;text-decoration:none;background:var(--burg-pale);color:var(--burg);transition:transform .2s,box-shadow .2s;}
+.btn-primary-light:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2);}
+.btn-ghost-light{display:inline-flex;align-items:center;gap:8px;font-family:'General Sans',sans-serif;font-weight:600;font-size:16px;padding:13px 30px;border-radius:100px;text-decoration:none;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3);transition:transform .2s,border-color .2s,background .2s;}
+.btn-ghost-light:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.6);transform:translateY(-2px);}
 
 /* ============ FOOTER ============ */
-footer{
-  background:var(--ink);border-top:1px solid rgba(255,255,255,.08);
-  padding:clamp(32px,5vw,48px) 0;text-align:center;
-}
-footer p{font-size:14px;color:#5a5a5e;}
-footer a{color:var(--pink-bright);text-decoration:none;}
+footer{background:var(--ink-mid);border-top:1px solid rgba(250,246,240,.1);padding:clamp(32px,5vw,48px) 0;text-align:center;}
+footer p{font-size:15px;color:rgba(250,246,240,.4);}
+footer a{color:var(--burg-light);text-decoration:none;}
 footer a:hover{text-decoration:underline;}
 
 /* ============ RESPONSIVE ============ */
@@ -240,7 +204,7 @@ footer a:hover{text-decoration:underline;}
 }
 @media(max-width:560px){
   .stats-row{flex-direction:column;gap:16px;}
-  .stat+.stat{border-left:none;border-top:1px solid rgba(255,255,255,.12);padding:16px 0 0;}
+  .stat+.stat{border-left:none;border-top:1.5px solid var(--line);padding:16px 0 0;}
 }
 </style>
 </head>
@@ -265,27 +229,18 @@ footer a:hover{text-decoration:underline;}
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="hero-eyebrow">
-          <span>Melbourne, Australia</span>
-        </div>
+        <div class="hero-eyebrow">Melbourne, Australia</div>
         <h1>Change &amp; Transformation <em>Leader</em></h1>
         <p class="hero-sub">Founder of Change Made Simple. AI Tool Developer. 20 years' C-suite trusted advisor across government, financial services, NFP and professional services.</p>
         <div class="hero-contact">
-          <a href="mailto:sheena@changemadesimple.com.au">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            sheena@changemadesimple.com.au
+          <a href="mailto:sheena@changemadesimple.com.au" title="Email Sheena" aria-label="Email Sheena">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </a>
-          <a href="tel:0422563753">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.4 12a19.79 19.79 0 0 1-3-8.59A2 2 0 0 1 3.4 1.5h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.4a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            0422 563 753
+          <a href="https://www.linkedin.com/in/sheenakarim" target="_blank" rel="noopener" title="LinkedIn" aria-label="Sheena Karim on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/sheenakarim" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn: Sheena Karim
-          </a>
-          <a href="https://changemadesimple.com.au" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            changemadesimple.com.au
+          <a href="https://changemadesimple.com.au" target="_blank" rel="noopener" title="changemadesimple.com.au" aria-label="Visit Change Made Simple website">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </a>
         </div>
         <div class="hero-btns">
@@ -301,28 +256,16 @@ footer a:hover{text-decoration:underline;}
     </div>
 
     <div class="stats-row">
-      <div class="stat">
-        <div class="stat-num">30+</div>
-        <div class="stat-label">Years project experience</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">20</div>
-        <div class="stat-label">Years in change management</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">50+</div>
-        <div class="stat-label">Technology projects delivered</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3000+</div>
-        <div class="stat-label">Staff trained</div>
-      </div>
+      <div class="stat"><div class="stat-num">30+</div><div class="stat-label">Years project experience</div></div>
+      <div class="stat"><div class="stat-num">20</div><div class="stat-label">Years in change management</div></div>
+      <div class="stat"><div class="stat-num">50+</div><div class="stat-label">Technology projects delivered</div></div>
+      <div class="stat"><div class="stat-num">3,000+</div><div class="stat-label">Staff trained</div></div>
     </div>
   </div>
 </section>
 
 <!-- SUMMARY -->
-<section class="sec sec-warm" id="summary">
+<section class="sec sec-cream" id="summary">
   <div class="container">
     <div class="summary-grid">
       <div class="summary-body">
@@ -330,7 +273,7 @@ footer a:hover{text-decoration:underline;}
         <h2>C-Suite trusted advisor with 20 years in change</h2>
         <p>Founder of Change Made Simple and developer of an <strong>AI-powered Change Impact Scorecard</strong>, built end-to-end on Claude API, Cloudflare, GitHub and JSEmail.</p>
         <p>30 years' project experience, 20 in change — trusted by CEOs, CFOs and CIOs across government, financial services, NFP and professional services. Delivered technology adoption across <strong>50+ projects and 15+ organisations</strong>, including NAB, Australia Post, Monash University and Wyndham City Council.</p>
-        <p>Designed and facilitated training for <strong>3000+ staff</strong>, including 80 live sessions to 2000 users, solo-facilitated. Built change management as a formal discipline from scratch at IBM Bluewolf and System Partners, across 15+ concurrent client engagements.</p>
+        <p>Designed and facilitated training for <strong>3,000+ staff</strong>, including 80 live sessions to 2,000 users, solo-facilitated. Built change management as a formal discipline from scratch at IBM Bluewolf and System Partners, across 15+ concurrent client engagements.</p>
       </div>
       <div>
         <div class="highlight-card">
@@ -370,172 +313,172 @@ footer a:hover{text-decoration:underline;}
 </section>
 
 <!-- CAREER -->
-<section class="sec sec-dark" id="career">
+<section class="sec sec-career" id="career">
   <div class="container">
     <div class="label">Career History</div>
-    <h2 style="color:#fff;margin-bottom:.75rem;">Where I've delivered impact</h2>
+    <h2 style="margin-bottom:.75rem;">Where I've delivered impact</h2>
     <div class="career-intro">
       <p>15+ organisations, 50+ projects. From building change practices from scratch to steering enterprise-wide technology transformations.</p>
     </div>
 
-    <div class="timeline">
+    <!-- Featured: current role always open -->
+    <div class="tl-featured">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:.6rem;">
+        <span class="tl-org">Change Made Simple</span>
+        <span style="color:var(--line);font-size:13px;">·</span>
+        <span class="tl-period">Nov 2024 – Present</span>
+        <span style="margin-left:4px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--pink);color:#fff;padding:3px 10px;border-radius:999px;">Current</span>
+      </div>
+      <div class="tl-role">Founder &amp; Principal Change Consultant</div>
+      <div class="tl-desc">Founded a boutique change consultancy specialising in digital transformation and enterprise AI adoption, creating a proprietary 5-step change methodology and business readiness framework now used across client engagements. Developed an AI-powered Change Impact Scorecard built end-to-end on Claude API, Cloudflare, GitHub and JSEmail.</div>
+      <div class="tl-tags">
+        <span class="tl-tag">Change Strategy</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Website Development</span><span class="tl-tag">Content Development</span><span class="tl-tag">Marketing Plan</span><span class="tl-tag">Project Management</span><span class="tl-tag">Business Development</span><span class="tl-tag">AI-Change Tools</span><span class="tl-tag">Claude API</span><span class="tl-tag">Methodology Design</span>
+      </div>
+    </div>
 
-      <div class="tl-item featured">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Change Made Simple</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Nov 2024 – Present</span>
+    <!-- Accordion roles -->
+    <div class="acc-list">
+
+      <div class="acc-item" id="acc-1">
+        <button class="acc-head" onclick="toggleAcc('acc-1')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">Optometry Australia</span><span class="acc-period">Nov 2024 – Jan 2026</span></div>
+            <div class="acc-role-title">Change &amp; Transformation Lead</div>
           </div>
-          <div class="tl-role">Founder &amp; Principal Change Consultant</div>
-          <div class="tl-desc">Founded a boutique change consultancy specialising in digital transformation and enterprise AI adoption, creating a proprietary 5-step change methodology and business readiness framework now used across client engagements. Developed an AI-powered Change Impact Scorecard built end-to-end on Claude API, Cloudflare, GitHub and JSEmail.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Change Strategy</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Website Development</span><span class="tl-tag">Content Development</span><span class="tl-tag">Marketing Plan</span><span class="tl-tag">Project Management</span><span class="tl-tag">Business Development</span><span class="tl-tag">AI-Change Tools Development</span><span class="tl-tag">Claude API</span><span class="tl-tag">Methodology Design</span>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Led technology and process transformation aligned to the organisation's 2040 strategic vision. Change impact analysis flagged a vendor mismatch, averting a costly failed implementation before it commenced.</div>
+            <div class="acc-tags"><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Change Impact Analysis</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Process &amp; Requirements</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Comms Plan</span><span class="acc-tag">Training Delivery</span><span class="acc-tag">Vendor Risk Assessment</span></div>
           </div>
         </div>
       </div>
 
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Optometry Australia</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Nov 2024 – Jan 2026</span>
+      <div class="acc-item" id="acc-2">
+        <button class="acc-head" onclick="toggleAcc('acc-2')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">Bapcor</span><span class="acc-period">Oct 2023 – Aug 2024</span></div>
+            <div class="acc-role-title">Change Business Partner — HR &amp; Technology</div>
           </div>
-          <div class="tl-role">Change &amp; Transformation Lead</div>
-          <div class="tl-desc">Led technology and process transformation aligned to the organisation's 2040 strategic vision. Change impact analysis flagged a vendor mismatch, averting a costly failed implementation before it commenced.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Process &amp; Requirements</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Comms Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Project Management</span><span class="tl-tag">Vendor Risk Assessment</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Bapcor</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Oct 2023 – Aug 2024</span>
-          </div>
-          <div class="tl-role">Change Business Partner — HR &amp; Technology</div>
-          <div class="tl-desc">Embedded as change partner across concurrent Salesforce and Azure Data Lake programs. Partnered with the CIO to design a capability uplift program for a 100-person technology team and redeveloped the change methodology and toolkit, endorsed by the CIO and embedded org-wide.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">Azure Data Lake</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Project Management</span><span class="tl-tag">Capability Uplift</span><span class="tl-tag">CIO Partnership</span>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Embedded as change partner across concurrent Salesforce and Azure Data Lake programs. Partnered with the CIO to design a capability uplift program for a 100-person technology team and redeveloped the change methodology and toolkit, endorsed by the CIO and embedded org-wide.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce</span><span class="acc-tag">Azure Data Lake</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Change Impact Analysis</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Training Delivery</span><span class="acc-tag">Capability Uplift</span><span class="acc-tag">CIO Partnership</span></div>
           </div>
         </div>
       </div>
 
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Xperience Consulting</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Oct 2022 – Aug 2023</span>
+      <div class="acc-item" id="acc-3">
+        <button class="acc-head" onclick="toggleAcc('acc-3')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">Xperience Consulting</span><span class="acc-period">Oct 2022 – Aug 2023</span></div>
+            <div class="acc-role-title">Change Manager</div>
           </div>
-          <div class="tl-role">Change Manager</div>
-          <div class="tl-desc">Led change across two simultaneous system implementations — rostering and payroll/HRIS — for a 2500-staff NDIS provider. Turned significant organisational resistance into structured engagement and stepped into training delivery to secure go-live readiness.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">HRIS</span><span class="tl-tag">Payroll</span><span class="tl-tag">NDIS</span><span class="tl-tag">Trade Union Engagement</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Comms Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Good Shepherd</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Aug 2021 – Dec 2022</span>
-          </div>
-          <div class="tl-role">Change Lead — Multiple Projects</div>
-          <div class="tl-desc">Led Salesforce transformation for 100 staff alongside a No Interest Loans simplification project, partnering with Big 4 delivery teams and stepping in as interim Project Manager during a leadership gap.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">Big 4 Partnership</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Project Management</span><span class="tl-tag">Product Management</span>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Led change across two simultaneous system implementations — rostering and payroll/HRIS — for a 2,500-staff NDIS provider. Turned significant organisational resistance into structured engagement and stepped into training delivery to secure go-live readiness.</div>
+            <div class="acc-tags"><span class="acc-tag">HRIS</span><span class="acc-tag">Payroll</span><span class="acc-tag">NDIS</span><span class="acc-tag">Trade Union Engagement</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Change Impact Analysis</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Comms Plan</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Training Delivery</span></div>
           </div>
         </div>
       </div>
 
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Department of Education &amp; Training, Victoria</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Jul 2020 – Jul 2021</span>
+      <div class="acc-item" id="acc-4">
+        <button class="acc-head" onclick="toggleAcc('acc-4')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">Good Shepherd</span><span class="acc-period">Aug 2021 – Dec 2022</span></div>
+            <div class="acc-role-title">Change Lead — Multiple Projects</div>
           </div>
-          <div class="tl-role">Change &amp; Training Manager — KIMS Reform Salesforce Project</div>
-          <div class="tl-desc">Led change and training for a statewide kindergarten system rollout to Victorian Early Childhood Educators. Designed and delivered 80 live training sessions to 2000 users through full digital delivery during COVID — all solo-facilitated.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">80 Live Sessions</span><span class="tl-tag">2000 Users</span><span class="tl-tag">Statewide Rollout</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span><span class="tl-tag">Product Management</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">Australia Post (via Salesforce Consulting)</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Nov 2019 – Apr 2020</span>
-          </div>
-          <div class="tl-role">Change Lead — Salesforce Lightning Upgrade</div>
-          <div class="tl-desc">Led a team delivering full change strategy, comms and training for 800 impacted users in the B&amp;G division. Built executive alignment with General Managers and developed a Change Leadership program for middle managers.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce Lightning</span><span class="tl-tag">800 Users</span><span class="tl-tag">Change Leadership Program</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Change Impact Analysis</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Comms Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Project Management</span>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Led Salesforce transformation for 100 staff alongside a No Interest Loans simplification project, partnering with Big 4 delivery teams and stepping in as interim Project Manager during a leadership gap.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce</span><span class="acc-tag">Big 4 Partnership</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Training Delivery</span><span class="acc-tag">Project Management</span><span class="acc-tag">Product Management</span></div>
           </div>
         </div>
       </div>
 
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">National Australia Bank</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Feb 2019 – Nov 2019</span>
+      <div class="acc-item" id="acc-5">
+        <button class="acc-head" onclick="toggleAcc('acc-5')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">Dept of Education &amp; Training, VIC</span><span class="acc-period">Jul 2020 – Jul 2021</span></div>
+            <div class="acc-role-title">Change &amp; Training Manager — KIMS Reform</div>
           </div>
-          <div class="tl-role">Change Manager — Business Bank Salesforce Implementation</div>
-          <div class="tl-desc">Managed change across 14 stakeholder groups in a highly regulated banking environment, supporting training delivery to 4000 users in one of Australia's largest Salesforce rollouts.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">4000 Users</span><span class="tl-tag">14 Stakeholder Groups</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Training Delivery</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">System Partners</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Jun 2015 – Dec 2016</span>
-          </div>
-          <div class="tl-role">Salesforce Change Practice Lead</div>
-          <div class="tl-desc">Established change management as a formal discipline from scratch — building the methodology, tools and leadership buy-in across 15+ concurrent Salesforce client engagements including Tabcorp, Suncorp and Transport NSW.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">15+ Concurrent Clients</span><span class="tl-tag">Tabcorp</span><span class="tl-tag">Suncorp</span><span class="tl-tag">Transport NSW</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Methodology Design</span>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Led change and training for a statewide kindergarten system rollout to Victorian Early Childhood Educators. Designed and delivered 80 live training sessions to 2,000 users through full digital delivery during COVID — all solo-facilitated.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce</span><span class="acc-tag">80 Live Sessions</span><span class="acc-tag">2,000 Users</span><span class="acc-tag">Statewide Rollout</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Training Delivery</span></div>
           </div>
         </div>
       </div>
 
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-org">IBM Bluewolf</span>
-            <span class="tl-sep">·</span>
-            <span class="tl-period">Apr 2014 – May 2015</span>
+      <div class="acc-item" id="acc-6">
+        <button class="acc-head" onclick="toggleAcc('acc-6')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">Australia Post</span><span class="acc-period">Nov 2019 – Apr 2020</span></div>
+            <div class="acc-role-title">Change Lead — Salesforce Lightning Upgrade</div>
           </div>
-          <div class="tl-role">Salesforce Client Engagement Director &amp; Change Practice Lead</div>
-          <div class="tl-desc">Built and led a change practice across multiple concurrent clients including Australia Post and Direct Connect.</div>
-          <div class="tl-tags">
-            <span class="tl-tag">Salesforce</span><span class="tl-tag">Multiple Concurrent Clients</span><span class="tl-tag">Change Strategy</span><span class="tl-tag">Change Plan</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Stakeholder Management</span><span class="tl-tag">Engagement Plan</span><span class="tl-tag">Training Plan</span><span class="tl-tag">Project Management</span><span class="tl-tag">Business Development</span>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Led a team delivering full change strategy, comms and training for 800 impacted users in the B&amp;G division. Built executive alignment with General Managers and developed a Change Leadership program for middle managers.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce Lightning</span><span class="acc-tag">800 Users</span><span class="acc-tag">Change Leadership Program</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Change Impact Analysis</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Comms Plan</span><span class="acc-tag">Training Plan</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item" id="acc-7">
+        <button class="acc-head" onclick="toggleAcc('acc-7')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">National Australia Bank</span><span class="acc-period">Feb 2019 – Nov 2019</span></div>
+            <div class="acc-role-title">Change Manager — Business Bank Salesforce</div>
+          </div>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Managed change across 14 stakeholder groups in a highly regulated banking environment, supporting training delivery to 4,000 users in one of Australia's largest Salesforce rollouts.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce</span><span class="acc-tag">4,000 Users</span><span class="acc-tag">14 Stakeholder Groups</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Training Delivery</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item" id="acc-8">
+        <button class="acc-head" onclick="toggleAcc('acc-8')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">System Partners</span><span class="acc-period">Jun 2015 – Dec 2016</span></div>
+            <div class="acc-role-title">Salesforce Change Practice Lead</div>
+          </div>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Established change management as a formal discipline from scratch — building the methodology, tools and leadership buy-in across 15+ concurrent Salesforce client engagements including Tabcorp, Suncorp and Transport NSW.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce</span><span class="acc-tag">15+ Concurrent Clients</span><span class="acc-tag">Tabcorp</span><span class="acc-tag">Suncorp</span><span class="acc-tag">Transport NSW</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Methodology Design</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item" id="acc-9">
+        <button class="acc-head" onclick="toggleAcc('acc-9')" aria-expanded="false">
+          <div class="acc-head-left">
+            <div class="acc-meta"><span class="acc-org">IBM Bluewolf</span><span class="acc-period">Apr 2014 – May 2015</span></div>
+            <div class="acc-role-title">Salesforce Client Engagement Director &amp; Change Practice Lead</div>
+          </div>
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="acc-body">
+          <div class="acc-body-inner">
+            <div class="acc-desc">Built and led a change practice across multiple concurrent clients including Australia Post and Direct Connect.</div>
+            <div class="acc-tags"><span class="acc-tag">Salesforce</span><span class="acc-tag">Multiple Concurrent Clients</span><span class="acc-tag">Change Strategy</span><span class="acc-tag">Change Plan</span><span class="acc-tag">Stakeholder Analysis</span><span class="acc-tag">Stakeholder Management</span><span class="acc-tag">Engagement Plan</span><span class="acc-tag">Training Plan</span><span class="acc-tag">Project Management</span><span class="acc-tag">Business Development</span></div>
           </div>
         </div>
       </div>
@@ -559,7 +502,7 @@ footer a:hover{text-decoration:underline;}
         <div class="earlier-card">
           <div class="earlier-org">Wyndham City Council</div>
           <div class="earlier-role">Change &amp; Communications Lead</div>
-          <div class="earlier-desc">Oracle implementation impacting 1,500 staff. Led early stakeholder engagement including Trade Union representatives in a complex local government IR environment.</div>
+          <div class="earlier-desc">Oracle implementation impacting 1,500 staff. Led stakeholder engagement including Trade Union representatives in a complex local government IR environment.</div>
         </div>
         <div class="earlier-card">
           <div class="earlier-org">IDP Education</div>
@@ -569,147 +512,55 @@ footer a:hover{text-decoration:underline;}
       </div>
     </div>
 
-    <div style="margin-top:clamp(32px,4vw,48px);">
-      <div class="earlier-card" style="border-left:3px solid var(--pink-deep);">
-        <div class="label" style="color:var(--pink-deep);margin-bottom:.6rem;">Pre-2010 — UK &amp; Australia</div>
-        <p style="font-size:16px;line-height:1.7;color:#1d1d1f;">Supply chain, buying and SAP training roles across British Airports Authority, Colgate, Safeway UK, Fujitsu and Australia Post. Partnered with KPMG on a Department of Defence project in 2008.</p>
+    <div style="margin-top:clamp(28px,4vw,40px);">
+      <div class="pre2010-card">
+        <div class="label" style="margin-bottom:.6rem;">Pre-2010 — UK &amp; Australia</div>
+        <p style="font-size:16px;line-height:1.8;color:var(--muted);">Supply chain, buying and SAP training roles across British Airports Authority, Colgate, Safeway UK, Fujitsu and Australia Post. Partnered with KPMG on a Department of Defence project in 2008.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section class="sec sec-warm" id="skills">
+<section class="sec sec-cream" id="skills">
   <div class="container">
     <div class="label">Skills &amp; Tools</div>
     <h2 style="margin-bottom:clamp(32px,5vw,48px);">What I bring to the table</h2>
     <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon">🔄</div>
-        <div class="skill-title">Change Management</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Change Strategy</span>
-          <span class="skill-tag">Change Impact Analysis</span>
-          <span class="skill-tag">Stakeholder Management</span>
-          <span class="skill-tag">Engagement Plans</span>
-          <span class="skill-tag">Comms Plans</span>
-          <span class="skill-tag">Training Delivery</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">☁️</div>
-        <div class="skill-title">Enterprise Platforms</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Salesforce</span>
-          <span class="skill-tag">SAP</span>
-          <span class="skill-tag">Oracle</span>
-          <span class="skill-tag">Azure</span>
-          <span class="skill-tag">SharePoint</span>
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">QlikSense</span>
-          <span class="skill-tag">iChris</span>
-          <span class="skill-tag">HRIS EmpLive</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🤖</div>
-        <div class="skill-title">AI &amp; Development</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Claude API</span>
-          <span class="skill-tag">Claude Code</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">Railway</span>
-          <span class="skill-tag">Netlify</span>
-          <span class="skill-tag">Cloudflare</span>
-          <span class="skill-tag">JSEmail</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">📋</div>
-        <div class="skill-title">Methodologies</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Agile</span>
-          <span class="skill-tag">Waterfall</span>
-          <span class="skill-tag">Executive Coaching</span>
-          <span class="skill-tag">Organisational Design</span>
-          <span class="skill-tag">Fractional Change Management</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🎤</div>
-        <div class="skill-title">Training &amp; Facilitation</div>
-        <div class="skill-tags">
-          <span class="skill-tag">80+ Live Sessions</span>
-          <span class="skill-tag">3000+ Staff Trained</span>
-          <span class="skill-tag">Digital Delivery</span>
-          <span class="skill-tag">Solo Facilitation</span>
-          <span class="skill-tag">Leadership Programs</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🏛️</div>
-        <div class="skill-title">Sectors</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Financial Services</span>
-          <span class="skill-tag">Government</span>
-          <span class="skill-tag">NFP</span>
-          <span class="skill-tag">Education</span>
-          <span class="skill-tag">Professional Services</span>
-          <span class="skill-tag">Retail &amp; FMCG</span>
-        </div>
-      </div>
+      <div class="skill-card"><div class="skill-icon">🔄</div><div class="skill-title">Change Management</div><div class="skill-tags"><span class="skill-tag">Change Strategy</span><span class="skill-tag">Change Impact Analysis</span><span class="skill-tag">Stakeholder Management</span><span class="skill-tag">Engagement Plans</span><span class="skill-tag">Comms Plans</span><span class="skill-tag">Training Delivery</span></div></div>
+      <div class="skill-card"><div class="skill-icon">☁️</div><div class="skill-title">Enterprise Platforms</div><div class="skill-tags"><span class="skill-tag">Salesforce</span><span class="skill-tag">SAP</span><span class="skill-tag">Oracle</span><span class="skill-tag">Azure</span><span class="skill-tag">SharePoint</span><span class="skill-tag">Power BI</span><span class="skill-tag">QlikSense</span><span class="skill-tag">iChris</span><span class="skill-tag">HRIS EmpLive</span></div></div>
+      <div class="skill-card"><div class="skill-icon">🤖</div><div class="skill-title">AI &amp; Development</div><div class="skill-tags"><span class="skill-tag">Claude API</span><span class="skill-tag">Claude Code</span><span class="skill-tag">GitHub</span><span class="skill-tag">Railway</span><span class="skill-tag">Netlify</span><span class="skill-tag">Cloudflare</span><span class="skill-tag">JSEmail</span></div></div>
+      <div class="skill-card"><div class="skill-icon">📋</div><div class="skill-title">Methodologies</div><div class="skill-tags"><span class="skill-tag">Agile</span><span class="skill-tag">Waterfall</span><span class="skill-tag">Executive Coaching</span><span class="skill-tag">Organisational Design</span><span class="skill-tag">Fractional Change Management</span></div></div>
+      <div class="skill-card"><div class="skill-icon">🎤</div><div class="skill-title">Training &amp; Facilitation</div><div class="skill-tags"><span class="skill-tag">80+ Live Sessions</span><span class="skill-tag">3,000+ Staff Trained</span><span class="skill-tag">Digital Delivery</span><span class="skill-tag">Solo Facilitation</span><span class="skill-tag">Leadership Programs</span></div></div>
+      <div class="skill-card"><div class="skill-icon">🏛️</div><div class="skill-title">Sectors</div><div class="skill-tags"><span class="skill-tag">Financial Services</span><span class="skill-tag">Government</span><span class="skill-tag">NFP</span><span class="skill-tag">Education</span><span class="skill-tag">Professional Services</span><span class="skill-tag">Retail &amp; FMCG</span></div></div>
     </div>
   </div>
 </section>
 
 <!-- QUALIFICATIONS -->
-<section class="sec sec-dark" id="qualifications">
+<section class="sec sec-cream-mid" id="qualifications">
   <div class="container">
     <div class="label">Qualifications</div>
     <h2 style="margin-bottom:clamp(28px,4vw,40px);">Education &amp; credentials</h2>
     <div class="quals-list">
-      <div class="qual-item">
-        <div class="qual-year">2020</div>
-        <div class="qual-text">
-          <div class="qual-title">Masters in Business Leadership with Distinction</div>
-          <div class="qual-inst">Organisational Coaching and Leadership — Charles Sturt University</div>
-        </div>
-      </div>
-      <div class="qual-item">
-        <div class="qual-year">2018</div>
-        <div class="qual-text">
-          <div class="qual-title">IECL Executive Coaching — Level 1, 2 &amp; 3</div>
-          <div class="qual-inst">Principles of Organisational Coaching — Institute of Executive Coaching and Leadership</div>
-        </div>
-      </div>
-      <div class="qual-item">
-        <div class="qual-year">2006</div>
-        <div class="qual-text">
-          <div class="qual-title">Graduate Certificate in Change Management</div>
-          <div class="qual-inst">AGSM — University of New South Wales</div>
-        </div>
-      </div>
-      <div class="qual-item">
-        <div class="qual-year">1994</div>
-        <div class="qual-text">
-          <div class="qual-title">Bachelor of Science (Hons) in Management Science</div>
-          <div class="qual-inst">UMIST — University of Manchester Institute of Science and Technology, UK</div>
-        </div>
-      </div>
+      <div class="qual-item"><div class="qual-year">2020</div><div><div class="qual-title">Masters in Business Leadership with Distinction</div><div class="qual-inst">Organisational Coaching and Leadership — Charles Sturt University</div></div></div>
+      <div class="qual-item"><div class="qual-year">2018</div><div><div class="qual-title">IECL Executive Coaching — Level 1, 2 &amp; 3</div><div class="qual-inst">Principles of Organisational Coaching — Institute of Executive Coaching and Leadership</div></div></div>
+      <div class="qual-item"><div class="qual-year">2006</div><div><div class="qual-title">Graduate Certificate in Change Management</div><div class="qual-inst">AGSM — University of New South Wales</div></div></div>
+      <div class="qual-item"><div class="qual-year">1994</div><div><div class="qual-title">Bachelor of Science (Hons) in Management Science</div><div class="qual-inst">UMIST — University of Manchester Institute of Science and Technology, UK</div></div></div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="sec sec-warm">
+<section class="sec sec-cream">
   <div class="container">
     <div class="cta-box">
-      <div class="label" style="color:var(--pink-bright);">Let's work together</div>
+      <div class="label">Let's work together</div>
       <h2>Ready to make change land?</h2>
       <p>Whether you're mid-implementation, pre-go-live, or building AI adoption capability — let's talk.</p>
       <div class="cta-btns">
-        <a href="mailto:sheena@changemadesimple.com.au" class="btn-primary">Email Sheena</a>
-        <a href="https://changemadesimple.com.au" target="_blank" rel="noopener" class="btn-ghost">Visit Change Made Simple</a>
+        <a href="mailto:sheena@changemadesimple.com.au" class="btn-primary-light">Email Sheena</a>
+        <a href="https://changemadesimple.com.au" target="_blank" rel="noopener" class="btn-ghost-light">Visit Change Made Simple</a>
       </div>
     </div>
   </div>
@@ -723,12 +574,17 @@ footer a:hover{text-decoration:underline;}
 </footer>
 
 <script>
-// Sticky nav shadow on scroll
+function toggleAcc(id) {
+  const item = document.getElementById(id);
+  const btn = item.querySelector('.acc-head');
+  const isOpen = item.classList.contains('open');
+  item.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', !isOpen);
+}
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
-  nav.style.borderBottomColor = window.scrollY > 20 ? 'rgba(255,255,255,.12)' : 'rgba(255,255,255,.08)';
+  nav.style.boxShadow = window.scrollY > 20 ? '0 2px 16px rgba(26,18,8,.07)' : 'none';
 }, { passive: true });
 </script>
-
 </body>
 </html>
