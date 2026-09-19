@@ -85,12 +85,15 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 
 /* ============ NAV ============ */
 .nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px solid var(--line);}
-.nav-inner{max-width:1100px;margin:0 auto;padding:18px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between;}
-.nav-logo{font-family:'Clash Display',sans-serif;font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;}
+.nav-inner{max-width:1100px;margin:0 auto;padding:18px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.nav-logo{font-family:'Clash Display',sans-serif;font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;white-space:nowrap;}
 .nav-logo span{color:var(--burg);}
 .nav-links{display:flex;align-items:center;gap:28px;}
 .nav-links a{font-size:15px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-links a:hover{color:var(--burg);}
+.nav-back{display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:600;color:var(--burg);text-decoration:none;white-space:nowrap;transition:color .2s,gap .2s;}
+.nav-back:hover{color:var(--burg-mid);gap:10px;}
+.nav-back svg{width:15px;height:15px;flex-shrink:0;}
 .nav-cta{font-family:'General Sans',sans-serif;font-weight:600;font-size:14px;padding:10px 22px;border-radius:100px;background:var(--burg);color:#fff;text-decoration:none;transition:transform .2s,box-shadow .2s;}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(92,26,46,.3);color:#fff;}
 
@@ -254,12 +257,20 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
   .hero-photo{width:clamp(160px,45vw,220px);margin:0 auto;}
   .summary-grid{grid-template-columns:1fr;}
   .nav-links{display:none;}
+  .nav-back{font-size:13.5px;}
   .stats-row{gap:20px;}
   .stat{min-width:100px;}
 }
 @media(max-width:560px){
   .stats-row{flex-direction:column;gap:16px;}
   .stat+.stat{border-left:none;border-top:1.5px solid var(--line);padding:16px 0 0;}
+}
+/* Below 360px the wordmark and the back link compete for the same row. */
+@media(max-width:359px){
+  .nav-inner{padding-left:16px;padding-right:16px;gap:10px;}
+  .nav-logo{font-size:17px;}
+  .nav-back{font-size:12.5px;gap:5px;}
+  .nav-back svg{width:13px;height:13px;}
 }
 
 /* Print — a CV has to survive Cmd+P with every role visible */
@@ -308,6 +319,10 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
       <a href="#skills">Skills</a>
       <a href="#qualifications">Qualifications</a>
     </div>
+    <a href="https://changemadesimple.com.au" class="nav-back" aria-label="Back to Change Made Simple">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Change Made Simple
+    </a>
   </div>
 </nav>
 
