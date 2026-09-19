@@ -212,12 +212,17 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 .pre2010-card{background:var(--white);border:1.5px solid var(--line);border-left:3px solid var(--burg);border-radius:14px;padding:20px 24px;box-shadow:0 2px 8px rgba(26,18,8,.04);}
 
 /* ============ SKILLS ============ */
-.skills-list{display:flex;flex-direction:column;gap:0;border-top:1.5px solid var(--line);}
-.skill-row{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:baseline;padding:20px 0;border-bottom:1.5px solid var(--line);}
-.skill-cat{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--burg);flex-shrink:0;}
-.skill-pills{display:flex;flex-wrap:wrap;gap:6px;}
-.skill-pill{font-size:13.5px;font-weight:500;color:var(--stone);background:var(--white);border:1.5px solid var(--line);padding:5px 13px;border-radius:100px;}
-@media(max-width:600px){.skill-row{grid-template-columns:1fr;gap:10px;}}
+.skills-list{border-top:1.5px solid var(--line);}
+.skill-row{display:grid;grid-template-columns:210px 1fr;gap:28px;padding:22px 0;border-bottom:1.5px solid var(--line);}
+.skill-cat{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--burg);}
+/* Signature capabilities lead each row; supporting detail sits quieter beneath. */
+.skill-lead{font-family:'Clash Display',sans-serif;font-size:17.5px;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin-bottom:5px;}
+.skill-lead span{color:var(--line);margin:0 7px;font-weight:400;}
+.skill-rest{font-size:15px;color:var(--muted);line-height:1.7;}
+@media(max-width:600px){
+  .skill-row{grid-template-columns:1fr;gap:9px;}
+  .skill-lead{font-size:16.5px;}
+}
 
 /* ============ QUALS ============ */
 .quals-list{display:flex;flex-direction:column;gap:0;border-top:1.5px solid var(--line);}
@@ -282,7 +287,7 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
   .acc-item,.tl-featured{border:none;border-bottom:1px solid #ccc;border-radius:0;}
   .acc-head{padding:8px 0;}
   .acc-body-inner{padding:0 0 10px;}
-  .acc-tag,.tl-tag,.skill-pill{border:1px solid #ccc;background:#fff;}
+  .acc-tag,.tl-tag{border:1px solid #ccc;background:#fff;}
   .acc-current,.tl-featured span[style*="--pink"]{background:#fff !important;color:#000 !important;border:1px solid #000;}
   h2{font-size:15pt;margin-bottom:.5rem;}
   a{text-decoration:none;color:#000;}
@@ -625,12 +630,12 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
     <div class="label">Skills &amp; Tools</div>
     <h2 style="margin-bottom:clamp(32px,5vw,48px);">What I bring to the table</h2>
     <div class="skills-list">
-      <div class="skill-row"><div class="skill-cat">Change Management</div><div class="skill-pills"><span class="skill-pill">Change Strategy</span><span class="skill-pill">Change Impact Analysis</span><span class="skill-pill">Stakeholder Management</span><span class="skill-pill">Engagement Plans</span><span class="skill-pill">Comms Plans</span><span class="skill-pill">Training Delivery</span><span class="skill-pill">Business Readiness</span></div></div>
-      <div class="skill-row"><div class="skill-cat">Enterprise Platforms</div><div class="skill-pills"><span class="skill-pill">Salesforce</span><span class="skill-pill">SAP</span><span class="skill-pill">Oracle</span><span class="skill-pill">Azure</span><span class="skill-pill">SharePoint</span><span class="skill-pill">Power BI</span><span class="skill-pill">QlikSense</span><span class="skill-pill">iChris</span><span class="skill-pill">HRIS EmpLive</span><span class="skill-pill">Contract Management Systems</span></div></div>
-      <div class="skill-row"><div class="skill-cat">AI &amp; Development</div><div class="skill-pills"><span class="skill-pill">Claude API</span><span class="skill-pill">Claude Code</span><span class="skill-pill">GitHub</span><span class="skill-pill">Railway</span><span class="skill-pill">Netlify</span><span class="skill-pill">Cloudflare</span><span class="skill-pill">EmailJS</span></div></div>
-      <div class="skill-row"><div class="skill-cat">Methodologies</div><div class="skill-pills"><span class="skill-pill">Agile</span><span class="skill-pill">Waterfall</span><span class="skill-pill">Executive Coaching</span><span class="skill-pill">Organisational Design</span><span class="skill-pill">Fractional Change Management</span></div></div>
-      <div class="skill-row"><div class="skill-cat">Training</div><div class="skill-pills"><span class="skill-pill">80+ Live Sessions</span><span class="skill-pill">3,000+ Staff Trained</span><span class="skill-pill">Digital Delivery</span><span class="skill-pill">Solo Facilitation</span><span class="skill-pill">Leadership Programs</span></div></div>
-      <div class="skill-row"><div class="skill-cat">Sectors</div><div class="skill-pills"><span class="skill-pill">Financial Services</span><span class="skill-pill">Government</span><span class="skill-pill">NFP</span><span class="skill-pill">Education</span><span class="skill-pill">Professional Services</span><span class="skill-pill">Retail &amp; FMCG</span><span class="skill-pill">Hospitality &amp; Gaming</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Change Management</div><div><div class="skill-lead">Change Strategy<span>/</span>Change Impact Analysis<span>/</span>Stakeholder Management</div><div class="skill-rest">Engagement Plans, Comms Plans, Training Delivery, Business Readiness</div></div></div>
+      <div class="skill-row"><div class="skill-cat">Enterprise Platforms</div><div><div class="skill-lead">Salesforce<span>/</span>SAP<span>/</span>Oracle</div><div class="skill-rest">Azure, SharePoint, Power BI, QlikSense, iChris, HRIS EmpLive, Contract Management Systems</div></div></div>
+      <div class="skill-row"><div class="skill-cat">AI &amp; Development</div><div><div class="skill-lead">Claude API<span>/</span>Claude Code</div><div class="skill-rest">GitHub, Railway, Netlify, Cloudflare, EmailJS</div></div></div>
+      <div class="skill-row"><div class="skill-cat">Methodologies</div><div><div class="skill-lead">Executive Coaching<span>/</span>Fractional Change Management</div><div class="skill-rest">Agile, Waterfall, Organisational Design</div></div></div>
+      <div class="skill-row"><div class="skill-cat">Training</div><div><div class="skill-lead">80+ Live Sessions<span>/</span>3,000+ Staff Trained</div><div class="skill-rest">Digital Delivery, Solo Facilitation, Leadership Programs</div></div></div>
+      <div class="skill-row"><div class="skill-cat">Sectors</div><div><div class="skill-lead">Financial Services<span>/</span>Government</div><div class="skill-rest">NFP, Education, Professional Services, Retail &amp; FMCG, Hospitality &amp; Gaming</div></div></div>
     </div>
   </div>
 </section>
