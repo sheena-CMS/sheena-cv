@@ -215,14 +215,16 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 .pre2010-card{background:var(--white);border:1.5px solid var(--line);border-left:3px solid var(--burg);border-radius:14px;padding:20px 24px;box-shadow:0 2px 8px rgba(26,18,8,.04);}
 
 /* ============ SKILLS ============ */
-.skills-list{border-top:1.5px solid var(--line);}
-.skill-row{display:grid;grid-template-columns:210px 1fr;gap:28px;padding:22px 0;border-bottom:1.5px solid var(--line);}
+.skills-list{background:var(--white);border-radius:18px;padding:6px 30px;}
+.skill-row{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:22px 0;border-bottom:1.5px solid var(--line);}
+.skills-list .skill-row:last-child{border-bottom:none;}
 .skill-cat{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--burg);}
 /* Signature capabilities lead each row; supporting detail sits quieter beneath. */
 .skill-lead{font-family:'Clash Display',sans-serif;font-size:17.5px;font-weight:600;letter-spacing:-.01em;color:var(--ink);margin-bottom:5px;}
 .skill-lead span{color:var(--line);margin:0 7px;font-weight:400;}
 .skill-rest{font-size:15px;color:var(--muted);line-height:1.7;}
 @media(max-width:600px){
+  .skills-list{padding:4px 20px;border-radius:16px;}
   .skill-row{grid-template-columns:1fr;gap:9px;}
   .skill-lead{font-size:16.5px;}
 }
@@ -313,7 +315,8 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
   .acc-head{padding:8px 0;}
   .acc-body-inner{padding:0 0 10px;}
   .acc-tag,.tl-tag{border:1px solid #ccc;background:#fff;}
-  .qual-tile,.quals-featured{border:1px solid #ccc;border-radius:8px;}
+  .qual-tile,.quals-featured,.skills-list{border:1px solid #ccc;border-radius:8px;}
+  .skills-list{padding:0 14px;}
   .acc-current,.tl-featured span[style*="--pink"]{background:#fff !important;color:#000 !important;border:1px solid #000;}
   h2{font-size:15pt;margin-bottom:.5rem;}
   a{text-decoration:none;color:#000;}
