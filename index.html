@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sheena Karim — Change & Transformation Leader</title>
 <meta name="description" content="30 years of project experience, 20 in change management. Trusted by CEOs, CFOs and CIOs across government, financial services, NFP and professional services.">
+<link rel="canonical" href="https://cv.changemadesimple.com.au/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph / LinkedIn -->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Sheena Karim">
+<meta property="og:url" content="https://cv.changemadesimple.com.au/">
+<meta property="og:title" content="Sheena Karim — Change &amp; Transformation Leader">
+<meta property="og:description" content="30 years' project experience, 20 in change. Founder of Change Made Simple and AI tool developer. Trusted by CEOs, CFOs and CIOs across government, financial services, NFP and professional services.">
+<meta property="og:image" content="https://cv.changemadesimple.com.au/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sheena Karim — Change &amp; Transformation Leader, Melbourne Australia">
+<meta property="og:locale" content="en_AU">
+<meta property="profile:first_name" content="Sheena">
+<meta property="profile:last_name" content="Karim">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sheena Karim — Change &amp; Transformation Leader">
+<meta name="twitter:description" content="30 years' project experience, 20 in change. Founder of Change Made Simple and AI tool developer.">
+<meta name="twitter:image" content="https://cv.changemadesimple.com.au/og-card.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sheena Karim",
+  "url": "https://cv.changemadesimple.com.au/",
+  "image": "https://cv.changemadesimple.com.au/sheena.png",
+  "jobTitle": "Change & Transformation Leader",
+  "description": "Founder of Change Made Simple. 30 years' project experience, 20 in change management. C-suite trusted advisor across government, financial services, NFP and professional services.",
+  "email": "mailto:sheena@changemadesimple.com.au",
+  "address": { "@type": "PostalAddress", "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU" },
+  "worksFor": [
+    { "@type": "Organization", "name": "Change Made Simple", "url": "https://changemadesimple.com.au" },
+    { "@type": "Organization", "name": "Crown Resorts" }
+  ],
+  "knowsAbout": ["Change Management","Organisational Change","Digital Transformation","Enterprise Technology Adoption","Salesforce","SAP","Oracle","Enterprise AI Adoption","Executive Coaching","Training Design and Delivery"],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Charles Sturt University" },
+    { "@type": "CollegeOrUniversity", "name": "AGSM, University of New South Wales" },
+    { "@type": "CollegeOrUniversity", "name": "UMIST, University of Manchester" }
+  ],
+  "sameAs": ["https://www.linkedin.com/in/sheenakarim","https://changemadesimple.com.au"]
+}
+</script>
 <link rel="preconnect" href="https://api.fontshare.com">
 <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
@@ -108,6 +152,13 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 /* ============ CAREER — ACCORDION ============ */
 .sec-career{background:var(--cream-mid);}
 .career-intro{max-width:72ch;margin-bottom:clamp(36px,5vw,56px);}
+.acc-toolbar{display:flex;justify-content:flex-end;margin-bottom:10px;}
+.acc-expand-all{
+  font-family:'General Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:.04em;
+  color:var(--burg);background:none;border:1.5px solid var(--line);border-radius:999px;
+  padding:6px 16px;cursor:pointer;transition:border-color .2s,background .2s;
+}
+.acc-expand-all:hover{border-color:var(--burg-light);background:var(--white);}
 .career-intro p{font-size:1.1rem;color:var(--muted);line-height:1.8;}
 
 /* Featured card (top role, always open) */
@@ -146,7 +197,7 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 .acc-body{
   max-height:0;overflow:hidden;transition:max-height .3s ease;
 }
-.acc-item.open .acc-body{max-height:600px;}
+.acc-item.open .acc-body{max-height:var(--acc-h,2000px);}
 .acc-body-inner{padding:0 22px 20px;}
 .acc-desc{font-size:15.5px;color:var(--muted);line-height:1.8;margin-bottom:1rem;}
 .acc-tags{display:flex;flex-wrap:wrap;gap:6px;}
@@ -205,6 +256,39 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
   .stats-row{flex-direction:column;gap:16px;}
   .stat+.stat{border-left:none;border-top:1.5px solid var(--line);padding:16px 0 0;}
 }
+
+/* Print — a CV has to survive Cmd+P with every role visible */
+@media print{
+  @page{margin:14mm;}
+  html{scroll-behavior:auto;}
+  body{background:#fff;font-size:11.5pt;line-height:1.45;}
+  .nav,.acc-toolbar,.acc-chevron,.hero-contact,.cta-btns{display:none !important;}
+  .sec{padding:14px 0 !important;}
+  .container{max-width:none;padding:0;}
+  .hero,.sec-cream,.sec-cream-mid,.sec-career,.pre2010-card{background:#fff !important;}
+  /* These three are light-text-on-dark on screen. Printers drop background
+     colours, so their text must be forced dark or it prints invisible. */
+  .highlight-card,.cta-box,footer{
+    background:#fff !important;box-shadow:none !important;
+    border:1px solid #ccc;border-radius:8px;
+  }
+  .highlight-card *,.cta-box *,footer *{color:#1A1208 !important;}
+  .highlight-card .label,.cta-box .label{color:#5C1A2E !important;}
+  .hl-icon{background:#EFEAE2 !important;}
+  .acc-body{max-height:none !important;overflow:visible !important;}
+  .acc-item,.tl-featured,.earlier-card,.qual-item,.skill-row,.pre2010-card{
+    break-inside:avoid;page-break-inside:avoid;
+  }
+  .acc-item,.tl-featured{border:none;border-bottom:1px solid #ccc;border-radius:0;}
+  .acc-head{padding:8px 0;}
+  .acc-body-inner{padding:0 0 10px;}
+  .acc-tag,.tl-tag,.skill-pill{border:1px solid #ccc;background:#fff;}
+  .acc-current,.tl-featured span[style*="--pink"]{background:#fff !important;color:#000 !important;border:1px solid #000;}
+  h2{font-size:15pt;margin-bottom:.5rem;}
+  a{text-decoration:none;color:#000;}
+  .print-contact{display:block !important;}
+}
+.print-contact{display:none;font-size:10.5pt;color:#333;margin-top:.6rem;}
 </style>
 </head>
 <body>
@@ -241,6 +325,7 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </a>
         </div>
+        <p class="print-contact">sheena@changemadesimple.com.au · linkedin.com/in/sheenakarim · changemadesimple.com.au · Melbourne, Australia</p>
       </div>
       <div>
         <div class="hero-photo">
@@ -265,8 +350,8 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
       <div class="summary-body">
         <div class="label">About</div>
         <h2>C-Suite trusted advisor with 20 years in change</h2>
-        <p>Founder of Change Made Simple and developer of an <strong>AI-powered Change Impact Scorecard</strong>, built end-to-end on Claude API, Cloudflare, GitHub and JSEmail.</p>
-        <p>30 years' project experience, 20 in change — trusted by CEOs, CFOs and CIOs across government, financial services, NFP and professional services. Delivered technology adoption across <strong>50+ projects and 15+ organisations</strong>, including NAB, Australia Post, Monash University and Wyndham City Council.</p>
+        <p>Founder of Change Made Simple and developer of an <strong>AI-powered Change Impact Scorecard</strong>, built end-to-end on Claude API, Cloudflare, GitHub, Railway, Netlify and EmailJS.</p>
+        <p>30 years' project experience, 20 in change — trusted by CEOs, CFOs and CIOs across government, financial services, NFP and professional services. Delivered technology adoption across <strong>50+ projects and 15+ organisations</strong>, including Crown Resorts, NAB, Australia Post, Monash University and Wyndham City Council.</p>
         <p>Designed and facilitated training for <strong>3,000+ staff</strong>, including 80 live sessions to 2,000 users, solo-facilitated. Built change management as a formal discipline from scratch at IBM Bluewolf and System Partners, across 15+ concurrent client engagements.</p>
       </div>
       <div>
@@ -283,7 +368,7 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
             <div class="hl-icon">🤖</div>
             <div class="hl-text">
               <div class="hl-title">AI Tool Developer</div>
-              <div class="hl-sub">Built a proprietary AI-powered Change Impact Scorecard end-to-end using Claude API, GitHub, Railway and Netlify.</div>
+              <div class="hl-sub">Built a proprietary AI-powered Change Impact Scorecard end-to-end using Claude API, Cloudflare, GitHub, Railway, Netlify and EmailJS.</div>
             </div>
           </div>
           <div class="hl-item">
@@ -324,13 +409,16 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
         <span style="margin-left:4px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--pink);color:#fff;padding:3px 10px;border-radius:999px;">Current</span>
       </div>
       <div class="tl-role">Founder &amp; Principal Change Consultant</div>
-      <div class="tl-desc">Founded a boutique change consultancy specialising in digital transformation and enterprise AI adoption, creating a proprietary 5-step change methodology and business readiness framework now used across client engagements. Developed an AI-powered Change Impact Scorecard built end-to-end on Claude API, Cloudflare, GitHub and JSEmail.</div>
+      <div class="tl-desc">Founded a boutique change consultancy specialising in digital transformation and enterprise AI adoption, creating a proprietary 5-step change methodology and business readiness framework now used across client engagements. Developed an AI-powered Change Impact Scorecard built end-to-end on Claude API, Cloudflare, GitHub, Railway, Netlify and EmailJS.</div>
       <div class="tl-tags">
         <span class="tl-tag">Change Strategy</span><span class="tl-tag">Stakeholder Analysis</span><span class="tl-tag">Website Development</span><span class="tl-tag">Content Development</span><span class="tl-tag">Marketing Plan</span><span class="tl-tag">Project Management</span><span class="tl-tag">Business Development</span><span class="tl-tag">AI-Change Tools</span><span class="tl-tag">Claude API</span><span class="tl-tag">Methodology Design</span>
       </div>
     </div>
 
     <!-- Accordion roles -->
+    <div class="acc-toolbar">
+      <button type="button" class="acc-expand-all" id="accExpandAll" onclick="toggleAll()" aria-expanded="false">Expand all roles</button>
+    </div>
     <div class="acc-list">
 
       <div class="acc-item" id="acc-1">
@@ -537,12 +625,12 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
     <div class="label">Skills &amp; Tools</div>
     <h2 style="margin-bottom:clamp(32px,5vw,48px);">What I bring to the table</h2>
     <div class="skills-list">
-      <div class="skill-row"><div class="skill-cat">Change Management</div><div class="skill-pills"><span class="skill-pill">Change Strategy</span><span class="skill-pill">Change Impact Analysis</span><span class="skill-pill">Stakeholder Management</span><span class="skill-pill">Engagement Plans</span><span class="skill-pill">Comms Plans</span><span class="skill-pill">Training Delivery</span></div></div>
-      <div class="skill-row"><div class="skill-cat">Enterprise Platforms</div><div class="skill-pills"><span class="skill-pill">Salesforce</span><span class="skill-pill">SAP</span><span class="skill-pill">Oracle</span><span class="skill-pill">Azure</span><span class="skill-pill">SharePoint</span><span class="skill-pill">Power BI</span><span class="skill-pill">QlikSense</span><span class="skill-pill">iChris</span><span class="skill-pill">HRIS EmpLive</span></div></div>
-      <div class="skill-row"><div class="skill-cat">AI &amp; Development</div><div class="skill-pills"><span class="skill-pill">Claude API</span><span class="skill-pill">Claude Code</span><span class="skill-pill">GitHub</span><span class="skill-pill">Railway</span><span class="skill-pill">Netlify</span><span class="skill-pill">Cloudflare</span><span class="skill-pill">JSEmail</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Change Management</div><div class="skill-pills"><span class="skill-pill">Change Strategy</span><span class="skill-pill">Change Impact Analysis</span><span class="skill-pill">Stakeholder Management</span><span class="skill-pill">Engagement Plans</span><span class="skill-pill">Comms Plans</span><span class="skill-pill">Training Delivery</span><span class="skill-pill">Business Readiness</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Enterprise Platforms</div><div class="skill-pills"><span class="skill-pill">Salesforce</span><span class="skill-pill">SAP</span><span class="skill-pill">Oracle</span><span class="skill-pill">Azure</span><span class="skill-pill">SharePoint</span><span class="skill-pill">Power BI</span><span class="skill-pill">QlikSense</span><span class="skill-pill">iChris</span><span class="skill-pill">HRIS EmpLive</span><span class="skill-pill">Contract Management Systems</span></div></div>
+      <div class="skill-row"><div class="skill-cat">AI &amp; Development</div><div class="skill-pills"><span class="skill-pill">Claude API</span><span class="skill-pill">Claude Code</span><span class="skill-pill">GitHub</span><span class="skill-pill">Railway</span><span class="skill-pill">Netlify</span><span class="skill-pill">Cloudflare</span><span class="skill-pill">EmailJS</span></div></div>
       <div class="skill-row"><div class="skill-cat">Methodologies</div><div class="skill-pills"><span class="skill-pill">Agile</span><span class="skill-pill">Waterfall</span><span class="skill-pill">Executive Coaching</span><span class="skill-pill">Organisational Design</span><span class="skill-pill">Fractional Change Management</span></div></div>
       <div class="skill-row"><div class="skill-cat">Training</div><div class="skill-pills"><span class="skill-pill">80+ Live Sessions</span><span class="skill-pill">3,000+ Staff Trained</span><span class="skill-pill">Digital Delivery</span><span class="skill-pill">Solo Facilitation</span><span class="skill-pill">Leadership Programs</span></div></div>
-      <div class="skill-row"><div class="skill-cat">Sectors</div><div class="skill-pills"><span class="skill-pill">Financial Services</span><span class="skill-pill">Government</span><span class="skill-pill">NFP</span><span class="skill-pill">Education</span><span class="skill-pill">Professional Services</span><span class="skill-pill">Retail &amp; FMCG</span></div></div>
+      <div class="skill-row"><div class="skill-cat">Sectors</div><div class="skill-pills"><span class="skill-pill">Financial Services</span><span class="skill-pill">Government</span><span class="skill-pill">NFP</span><span class="skill-pill">Education</span><span class="skill-pill">Professional Services</span><span class="skill-pill">Retail &amp; FMCG</span><span class="skill-pill">Hospitality &amp; Gaming</span></div></div>
     </div>
   </div>
 </section>
@@ -580,17 +668,54 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
 <footer>
   <div class="container">
     <p><strong>© 2026 Sheena Karim</strong></p>
+    <p style="margin-top:.4rem;font-size:14px;opacity:.75;">Last updated <time datetime="2026-09">September 2026</time></p>
   </div>
 </footer>
 
 <script>
+function setAcc(item, open) {
+  const btn = item.querySelector('.acc-head');
+  const inner = item.querySelector('.acc-body-inner');
+  // Measure the real content so a long entry can never clip itself.
+  item.style.setProperty('--acc-h', open ? inner.scrollHeight + 'px' : '0px');
+  item.classList.toggle('open', open);
+  btn.setAttribute('aria-expanded', open);
+}
+
 function toggleAcc(id) {
   const item = document.getElementById(id);
-  const btn = item.querySelector('.acc-head');
-  const isOpen = item.classList.contains('open');
-  item.classList.toggle('open', !isOpen);
-  btn.setAttribute('aria-expanded', !isOpen);
+  setAcc(item, !item.classList.contains('open'));
+  syncExpandAll();
 }
+
+const accItems = () => Array.from(document.querySelectorAll('.acc-item'));
+
+function syncExpandAll() {
+  const btn = document.getElementById('accExpandAll');
+  if (!btn) return;
+  const allOpen = accItems().every(i => i.classList.contains('open'));
+  btn.textContent = allOpen ? 'Collapse all roles' : 'Expand all roles';
+  btn.setAttribute('aria-expanded', allOpen);
+}
+
+function toggleAll() {
+  const items = accItems();
+  const open = !items.every(i => i.classList.contains('open'));
+  items.forEach(i => setAcc(i, open));
+  syncExpandAll();
+}
+
+// Re-measure open entries when reflow changes their height (rotate, resize).
+let reflow;
+window.addEventListener('resize', () => {
+  clearTimeout(reflow);
+  reflow = setTimeout(() => {
+    accItems().filter(i => i.classList.contains('open')).forEach(i => setAcc(i, true));
+  }, 120);
+});
+
+// Print needs every role expanded, whatever the reader had open on screen.
+window.addEventListener('beforeprint', () => accItems().forEach(i => setAcc(i, true)));
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
   nav.style.boxShadow = window.scrollY > 20 ? '0 2px 16px rgba(26,18,8,.07)' : 'none';
