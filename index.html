@@ -228,12 +228,26 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.2rem;color:var(--ink);}
 }
 
 /* ============ QUALS ============ */
-.quals-list{display:flex;flex-direction:column;gap:0;border-top:1.5px solid var(--line);}
-.qual-item{display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:baseline;padding:20px 0;border-bottom:1.5px solid var(--line);}
-.qual-year{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--burg);flex-shrink:0;}
-.qual-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:17px;color:var(--ink);margin-bottom:3px;}
-.qual-inst{font-size:15px;color:var(--muted);}
-@media(max-width:600px){.qual-item{grid-template-columns:1fr;gap:6px;}}
+/* Masters leads full width; the other three sit as a row of tiles beneath. */
+.quals-featured{background:var(--white);border-radius:18px;padding:28px 30px;display:flex;gap:26px;align-items:center;margin-bottom:16px;}
+.qf-year{font-family:'Clash Display',sans-serif;font-size:44px;font-weight:700;line-height:1;letter-spacing:-.02em;color:var(--burg);flex-shrink:0;}
+.qf-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:21px;line-height:1.25;color:var(--ink);margin-bottom:4px;}
+.qf-inst{font-size:15px;color:var(--muted);line-height:1.55;}
+.quals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.qual-tile{background:var(--white);border-radius:16px;padding:22px 24px;}
+.qt-year{font-family:'Clash Display',sans-serif;font-size:26px;font-weight:700;line-height:1;letter-spacing:-.02em;color:var(--burg);margin-bottom:10px;}
+.qt-title{font-family:'Clash Display',sans-serif;font-weight:700;font-size:16.5px;line-height:1.3;color:var(--ink);margin-bottom:4px;}
+.qt-inst{font-size:14px;color:var(--muted);line-height:1.55;}
+@media(max-width:860px){
+  .quals-grid{grid-template-columns:1fr 1fr;}
+  /* Three tiles in two columns leaves the last one stranded; let it span. */
+  .quals-grid > :last-child{grid-column:1 / -1;}
+}
+@media(max-width:600px){
+  .quals-grid{grid-template-columns:1fr;}
+  .quals-featured{flex-direction:column;align-items:flex-start;gap:12px;padding:24px;}
+  .qf-year{font-size:38px;}
+}
 
 /* ============ CTA ============ */
 .cta-box{background:#162340;border-radius:24px;padding:clamp(40px,6vw,64px);text-align:center;}
@@ -292,13 +306,14 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
   .highlight-card .label,.cta-box .label{color:#5C1A2E !important;}
   .hl-icon{background:#EFEAE2 !important;}
   .acc-body{max-height:none !important;overflow:visible !important;}
-  .acc-item,.tl-featured,.earlier-card,.qual-item,.skill-row,.pre2010-card{
+  .acc-item,.tl-featured,.earlier-card,.qual-tile,.quals-featured,.skill-row,.pre2010-card{
     break-inside:avoid;page-break-inside:avoid;
   }
   .acc-item,.tl-featured{border:none;border-bottom:1px solid #ccc;border-radius:0;}
   .acc-head{padding:8px 0;}
   .acc-body-inner{padding:0 0 10px;}
   .acc-tag,.tl-tag{border:1px solid #ccc;background:#fff;}
+  .qual-tile,.quals-featured{border:1px solid #ccc;border-radius:8px;}
   .acc-current,.tl-featured span[style*="--pink"]{background:#fff !important;color:#000 !important;border:1px solid #000;}
   h2{font-size:15pt;margin-bottom:.5rem;}
   a{text-decoration:none;color:#000;}
@@ -660,11 +675,17 @@ footer strong{color:rgba(250,246,240,.9);font-weight:600;}
   <div class="container">
     <div class="label">Qualifications</div>
     <h2 style="margin-bottom:clamp(28px,4vw,40px);">Education &amp; credentials</h2>
-    <div class="quals-list">
-      <div class="qual-item"><div class="qual-year">2020</div><div><div class="qual-title">Masters in Business Leadership with Distinction</div><div class="qual-inst">Organisational Coaching and Leadership — Charles Sturt University</div></div></div>
-      <div class="qual-item"><div class="qual-year">2018</div><div><div class="qual-title">IECL Executive Coaching — Level 1, 2 &amp; 3</div><div class="qual-inst">Institute of Executive Coaching and Leadership</div></div></div>
-      <div class="qual-item"><div class="qual-year">2006</div><div><div class="qual-title">Graduate Certificate in Change Management</div><div class="qual-inst">AGSM — University of New South Wales</div></div></div>
-      <div class="qual-item"><div class="qual-year">1994</div><div><div class="qual-title">Bachelor of Science (Hons) in Management Science</div><div class="qual-inst">UMIST — University of Manchester, UK</div></div></div>
+    <div class="quals-featured">
+      <div class="qf-year">2020</div>
+      <div>
+        <div class="qf-title">Masters in Business Leadership with Distinction</div>
+        <div class="qf-inst">Organisational Coaching and Leadership — Charles Sturt University</div>
+      </div>
+    </div>
+    <div class="quals-grid">
+      <div class="qual-tile"><div class="qt-year">2018</div><div class="qt-title">IECL Executive Coaching — Level 1, 2 &amp; 3</div><div class="qt-inst">Institute of Executive Coaching and Leadership</div></div>
+      <div class="qual-tile"><div class="qt-year">2006</div><div class="qt-title">Graduate Certificate in Change Management</div><div class="qt-inst">AGSM — University of New South Wales</div></div>
+      <div class="qual-tile"><div class="qt-year">1994</div><div class="qt-title">Bachelor of Science (Hons) in Management Science</div><div class="qt-inst">UMIST — University of Manchester, UK</div></div>
     </div>
   </div>
 </section>
